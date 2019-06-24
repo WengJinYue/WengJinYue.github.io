@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Tag: 悦读 | 小跃跃--个人博客</title>
+  <title itemprop="name">jsDeliver+github使用教程 | 小跃跃--个人博客</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -286,64 +286,190 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="悦读.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.2/images/jsdeliver.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.2/images/jsdeliver.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      jsDeliver+github使用教程</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="">
+          </a>
+        </span>
+        <span>
+          <a href="">小跃跃</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2019-6-24<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">悦读</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2018/12/12/Hexo-Theme-Sakura/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>前言:国内加载github的资源比较慢，需要使用CDN加速来优化网站打开速度，于是使用jsDeliver+github搭建免费的cdn。jsDelivr 是一个免费开源的 CDN 解决方案，用于帮助开发者和站长。包含 JavaScript 库、jQuery 插件、CSS 框架、字体等等 Web 上常用的静态资源。</p>
+<h2 id="初学者适用"><a href="#初学者适用" class="headerlink" title="初学者适用"></a>初学者适用</h2><h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h3><p>NPM是JavaScript的包管理器，也是世界上最大的软件注册中心。发现可重用代码的包——并以强大的新方式组装它们。每星期大约有 30 亿次的下载量，包含超过 600000 个 包（package（即，代码模块）。来自各大洲的开源软件开发者使用 npm 互相分享和借鉴。包的结构使您能够轻松跟踪依赖项和版本。<br>所以jsDeliver+npm就是把npm上的包当做cdn的存储。</p>
+<p>使用教程：</p>
+<pre><code class="yml">// load any project hosted on npm
+// 加载以NPM为存储的任何项目
+https://cdn.jsdelivr.net/npm/package@version/file
+// load jQuery v3.2.1
+// 比如加载Jquery3.2.1
+https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js
+// use a version range instead of a specific version
+//使用版本范围而不是特定版本
+https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js
+https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+// omit the version completely to get the latest one
+//完全忽略版本以获取最新版本，不建议使用
+https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
+略......
+</code></pre>
+<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><p>gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。<br>jsDeliver+Github使用教程：</p>
+<pre><code class="yml">// load any GitHub release, commit, or branch
+// 加载任何Github发布、提交或分支
+https://cdn.jsdelivr.net/gh/user/repo@version/file
+略......
+</code></pre>
+<h2 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h2><p>WordPress是一款个人博客系统，并逐步演化成一款内容管理系统软件，它是使用PHP语言和MySQL数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。<br>jsDeliver+WordPress使用教程：</p>
+<pre><code class="yml">// load any plugin from the WordPress.org plugins SVN repo
+// 从WordPress.org等SVN仓库加载任何插件
+https://cdn.jsdelivr.net/wp/plugins/project/tags/version/file
+略......
+</code></pre>
+<h2 id="第一步：新建github仓库"><a href="#第一步：新建github仓库" class="headerlink" title="第一步：新建github仓库"></a>第一步：新建github仓库</h2><p><img src="https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.2/images/1.jpg" alt></p>
+<p>(我已经有这个仓库，so…这不是重点)<br>接着在本地电脑克隆上图仓库（前提配置好本地git环境和ssh）<br>命令如下：</p>
+<pre><code class="yml">cd 某个目录下
+git clone git@github.com:你的用户名/cdn.git
+</code></pre>
+<h2 id="上传需要的资源"><a href="#上传需要的资源" class="headerlink" title="上传需要的资源"></a>上传需要的资源</h2><p>复制需要的静态资源到本地git仓库中，提交到github仓库上。<br>命令如下：</p>
+<pre><code class="yml">cd 到git仓库目录下
+// 查看状态
+git status
+// 添加所以改动
+git add .
+// 提交
+git commit -m &#39;第一次提交&#39;
+// 推送至远程仓库
+git push
+</code></pre>
+<p>（注：jsDeliver不支持加载超过20M的资源，所以一些视频最好压缩到20M以下）</p>
+<h2 id="发布仓库"><a href="#发布仓库" class="headerlink" title="发布仓库"></a>发布仓库</h2><p><img src="https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.2/images/2.png" alt><br><img src="https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.2/images/3.png" alt></p>
+<p>点击release发布</p>
+<p>发布版本号1.0（自定义）</p>
+<h2 id="第四步：通过jsDeliver引用资源"><a href="#第四步：通过jsDeliver引用资源" class="headerlink" title="第四步：通过jsDeliver引用资源"></a>第四步：通过jsDeliver引用资源</h2><pre><code class="yml">使用方法：
+https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径
+比如：
+//加载js
+https://cdn.jsdelivr.net/gh/yremp/cdn@1.0/js/jquery.js
+//加载图片
+https://cdn.jsdelivr.net/gh/yremp/cdn@1.0/images/hb.png
+</code></pre>
+<font color="#F08080" size="15">重点：这个链接相当于一个直链，使用和直链一样，如下图：</font>
+
+<p><img src="https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.2/images/4.png" alt></p>
+<font color="#F08080" size="15">总的来说，直链怎么用，这个链接怎么用</font>
+
+<p>尊重原创，转载自hojun和yremp的文章并做修改。 点击查看.<a href="https://www.hojun.cn/2019/01/18/jsDeliver-github%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%8C%E5%85%8D%E8%B4%B9%E5%A5%BD%E7%94%A8%E7%9A%84cdn/" target="_blank" rel="noopener">原文</a>。</p>
+
         </div>
-        <img width="150" height="150" src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2018/12/12/Hexo-Theme-Sakura/">
-    Hexo-Theme-Sakura</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2018-12-12</div>
-    <p>
-    hexo-sakura主题使用教程</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2018/12/12/Hexo-Theme-Sakura/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏<div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.5/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/WengJinYue/cdn@1.5/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2018/12/12/Hexo-Theme-Sakura.1/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Hexo-Theme-Sakura</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
 
 
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+  <script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.1/gitalk.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yremp/yremp-css@1.3/gitalk.css">
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+      var gitalk = new Gitalk({
+          clientID: 'd11ac250c5227e51dac9',
+          clientSecret: '3944523830bb8fbac835f8db14c40996277cdab2',
+          id: window.location.pathname,
+          repo: 'WengJinYue.github.io',
+          owner: 'WengJinYue',
+          admin: 'WengJinYue'
+      })
+      gitalk.render('gitalk-container')
+    </script>
+
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="小跃跃" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author">小跃跃</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
