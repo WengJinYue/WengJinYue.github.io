@@ -42,6 +42,26 @@
   
   <entry>
     <title>Hexo-Theme-Sakura</title>
+    <link href="/2018/12/12/Hexo-Theme-Sakura.1/"/>
+    <id>/2018/12/12/Hexo-Theme-Sakura.1/</id>
+    <published>2018-12-12T14:16:01.000Z</published>
+    <updated>2019-06-24T15:43:55.949Z</updated>
+    
+    <summary type="html">
+    
+      hexo-sakura主题使用教程
+    
+    </summary>
+    
+      <category term="资源" scheme="/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="web" scheme="/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Theme-Sakura</title>
     <link href="/2018/12/12/Hexo-Theme-Sakura/"/>
     <id>/2018/12/12/Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
@@ -59,26 +79,6 @@
       <category term="web" scheme="/tags/web/"/>
     
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="/2018/12/12/Hexo-Theme-Sakura.1/"/>
-    <id>/2018/12/12/Hexo-Theme-Sakura.1/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-06-24T15:43:55.949Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="资源" scheme="/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-      <category term="web" scheme="/tags/web/"/>
     
   </entry>
   
